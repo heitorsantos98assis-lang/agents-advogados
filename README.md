@@ -1,6 +1,6 @@
-# 57 Agents Advocacia — Claude Code para advogados
+# 57 Agents Advocacia — Codex para advogados
 
-**57 subagentes especializados** para advogados brasileiros, prontos para uso no Claude Code. Cada agente e um especialista em uma peca/rotina especifica do escritorio de advocacia — peticoes iniciais, contestacoes, recursos, calculos, pareceres, contratos — que atua proativamente quando o contexto da conversa bate com sua especialidade.
+**57 subagentes especializados** para advogados brasileiros, prontos para uso no Codex. Cada agente e um especialista em uma peca/rotina especifica do escritorio de advocacia — peticoes iniciais, contestacoes, recursos, calculos, pareceres, contratos — que atua proativamente quando o contexto da conversa bate com sua especialidade.
 
 ## Como instalar
 
@@ -9,18 +9,18 @@
    git clone https://github.com/heitorsantos98assis-lang/agents-advogados.git
    ```
 
-2. Copie os agentes para o seu projeto Claude Code:
+2. Copie os agentes para o seu projeto Codex:
    ```bash
-   cp -r agents-advogados/agents/* /caminho/do/seu/projeto/.claude/agents/
+   cp -r agents-advogados/agents/* /caminho/do/seu/projeto.codex/agents/
    ```
 
-   Ou, para uso global: `~/.claude/agents/`.
+   Ou, para uso global: `.codex/agents/`.
 
-3. Reinicie o Claude Code (`/exit` e abra de novo). Confirme com `/agents`.
+3. Reinicie o Codex (`/exit` e abra de novo). Confirme com `/agents`.
 
 ## Como usar
 
-- **Automatico**: "preciso contestar uma acao de cobranca em 15 dias" -> Claude delega para `contestacao-civel`.
+- **Automatico**: "preciso contestar uma acao de cobranca em 15 dias" -> Codex delega para `contestacao-civel`.
 - **Manual**: "use o agente `mandado-seguranca-tributario` para discutir Tema 69 do meu cliente".
 - **Em pipeline**: `peticao-inicial-civel` -> apos sentenca, `apelacao-civel` -> apos transito, `cumprimento-sentenca`.
 
